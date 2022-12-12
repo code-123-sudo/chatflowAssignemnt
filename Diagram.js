@@ -19,11 +19,11 @@ const Diagram = ({ width, height }) => {
     <div style={{ height, width }}>
       <ReactFlow
         elements={elements}
-        elementsSelectable={false}
-        nodesConnectable={false}
-        nodesDraggable={false}
-        panOnScroll={false}
-        paneMoveable={false}
+        elementsSelectable={true}
+        nodesConnectable={true}
+        nodesDraggable={true}
+        panOnScroll={true}
+        paneMoveable={true}
         onLoad={fitView}
       >
         <Background variant="dots" gap={16} size={1} color="#dddddd" />
